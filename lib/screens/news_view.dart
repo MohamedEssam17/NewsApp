@@ -28,8 +28,8 @@ class _NewsWebViewPageState extends State<NewsWebViewPage> {
           onProgress: (int progress) {
             // Update loading bar.
             if (progress > 60) {
-              isLoading = false;
-              setState(() {});
+              
+              setState(() {isLoading = false;});
             }
           },
           onPageStarted: (String url) {},
